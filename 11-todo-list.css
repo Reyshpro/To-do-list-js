@@ -1,0 +1,39 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-grid 
+{
+display: grid;
+grid-template-columns: 200px 150px 100px;
+column-gap: 10px;
+row-gap: 10px;
+margin-top: 10px;
+}
+.name-input , .due-date-input , .delete{
+  font-size: 15px;
+  padding: 6px;
+
+}
+.add{
+  background-color: rgb(4, 169, 4);
+  color: white;
+  border: none;
+}
+.add:hover{
+  opacity: 0.9;
+}
+.add:active{
+  opacity: 0.8;
+}
+.delete{
+   background-color: rgb(192, 6, 6);
+   color: white;
+   border: none;
+}
+.delete:hover{
+  opacity: 0.9;
+}
+.delete:active{
+  opacity: 0.8;
+}
