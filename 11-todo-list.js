@@ -34,12 +34,14 @@ function addTodo(){
 
   const name = inputElement.value;
   const dueDate = dateInputElement.value;
+  if (!name.trim() || !dueDate) return;
+
   todoList.push({
     name , 
     dueDate
    });
 
-  inputElement.value= '';
+  inputElement.value= ''; // clear the text input
 
   renderTodoList();
 
